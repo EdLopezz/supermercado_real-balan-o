@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica;
+    background-color: #f0e6b0;
+}
+header{
+    text-align: center;
+    background: url(bg-real.webp);
+}
+
+/*Tabelas */
+.tables table {
+    
+}
+#dif{
+    background-color ;
+}
+img{
+    width: 10%;
+}
+
+table{
+    width: 90%;
+    margin: 15px auto;
+    background-color: aliceblue;
+}
+table input{
+    width: 100%;
+    text-align: center;
+}
+
+/*Botoes*/
+
+.btn{
+    border: 2px solid;
+    display: block;
+    margin: auto;
+    width: 150px;
+    height: 40px;
+    background-color: #F2D42F ;
+    font-size: 1.1em;
+    border-radius: 10px;
+}
+
+.btn:active{
+    background-color: black;
+    color: aliceblue;
+}

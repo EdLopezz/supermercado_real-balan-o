@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balanço Ovos / Banana</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <img src="real-logo.png" alt="">
+        <h1>Balanço de bananas</h1>
+    </header>
+    <div class="tables">
+        <table border="1" >
+            <tr>
+                <th>Prata</th>
+                <td><input type="number" name="banana" id="bprata"></td>
+            </tr>
+            <tr>
+                <th>dagua</th>
+                <td><input type="number" name="banana" id="bdagua"></td>
+            </tr>
+            <tr>
+                <th>Terra</th>
+                <td><input type="number" name="banana" id="bterra" ></td>
+            </tr>
+        </table>
+        <table border="1">
+            <tr>
+                <th ></th>
+                <th >Und</th>
+                <th >Cx</th>
+            </tr>
+            <tr id="dif">
+                <th >OMEGA 3</th>
+                <td><input type="number" name="und" id="uomega"></td>
+                <td><input type="number" name="" id="cxomega"></td>
+            </tr>
+            <tr>
+                <th>JUMBO</th>
+                <td><input type="number" name="und" id="ujumbo"></td>
+                <td><input type="number" name="" id="cxjumbo"></td>
+            </tr>
+            <tr id="dif">
+                <th>STA MARIA C/12</th>
+                <td><input type="number" name="und" id="ustam"></td>
+                <td><input type="number" name="" id="cxstam"></td>
+            </tr>
+            <tr>
+                <th>STA MARIA C20</th>
+                <td><input type="number" name="und" id="ustamvinte"></td>
+                <td><input type="number" name="" id="cxstamv"></td>
+            </tr>
+            <tr id="dif">
+                <th>VENEZA</th>
+                <td><input type="number" name="und" id="uveneza"></td>
+                <td><input type="number" name="" id="cxveneza"></td>
+            </tr>
+            <tr>
+                <th>CODORNA</th>
+                <td><input type="number" name="und" id="ucodorna"></td>
+                <td><input type="number" name="" id="cxcodorna"></td>
+            </tr>
+            <tr id="dif">
+                <th>B. JESUS</th>
+                <td><input type="number" name="und" id="ubjesus"></td>
+                <td><input type="number" name="" id="cxbjesus"></td>
+            </tr>
+        
+        </table>
+    </div>
+    <input type="button" value="IMPRIMIR" onclick="impressao()" class="btn">
+    
+    <div id="gerarpdf">
+        <table border="1" >
+            <tr>
+                <th></th>
+                <th>Resultado</th>
+            </tr>
+            <tr>
+                <th>Prata</th>
+                <td id="rprata"></td>
+            </tr>
+            <tr>
+                <th>dagua</th>
+                <td id="rdagua"></td>
+            </tr>
+            <tr>
+                <th>Terra</th>
+                <td id="rterra"></td>
+            </tr>
+        </table>
+        <table border="1">
+            <tr>
+                <th ></th>
+                <th colspan="2" >Resultado</th>
+               
+            </tr>
+            <tr>
+                <th>OMEGA 3</th>
+                <td id="resomega"></td>
+            </tr>
+            <tr>
+                <th>JUMBO</th>
+                <td id="resjumbo"></td>
+            </tr>
+            <tr>
+                <th>STA MARIA C/12</th>
+                <td id="resstam"></td>
+            </tr>
+            <tr>
+                <th>STA MARIA C20</th>
+                <td id="resstamv"></td>
+            </tr>
+            <tr>
+                <th>VENEZA</th>
+                <td id="resveneza"></td>
+            </tr>
+            <tr>
+                <th>CODORNA</th>
+                <td id="rescodorna"></td>
+            </tr>
+            <tr>
+                <th>B. JESUS</th>
+                <td id="resbjesus"></td>
+            </tr>
+            
+        </table>
+        
+    </div>
+    <input type="button" value="ENVIAR PDF" onclick="gerarpdf()" class="btn"> 
+    <p>&copy; Edulopezz</p>
+    <script src="index.js"></script>
+</body>
+</html>
