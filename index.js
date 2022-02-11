@@ -82,7 +82,6 @@ resbjesus.innerHTML=bjesuscalc
 //Gerador de PDF
 
 function gerarpdf(){
-
 const dados = document.getElementById("gerarpdf").innerHTML//conteudo do pdf
 const janela = window.open("","","width= 400 height=400")//janela que abre 
 janela.document.write("<html> <head>")
@@ -92,4 +91,5 @@ janela.document.write(dados)
 janela.document.write("</body> </html>")
 janela.document.close
 janela.print()//faz aparecer a janela na tela
+
 }

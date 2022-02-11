@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Balanço Ovos / Banana</title>
     <link rel="stylesheet" href="index.css">
+    <script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
 </head>
 <body>
     <header>
@@ -71,7 +72,6 @@
         
         </table>
     </div>
-    <input type="button" value="IMPRIMIR" onclick="impressao()" class="btn">
     
     <div id="gerarpdf">
         <table border="1" >
@@ -130,8 +130,15 @@
         </table>
         
     </div>
-    <input type="button" value="ENVIAR PDF" onclick="gerarpdf()" class="btn"> 
-    <p>&copy; Edulopezz</p>
+    <input type="button" value="ENVIAR PDF" onclick="impressao() , gerarpdf()" class="btn" >
+    
+    <div id="rest">
+
+    </div>
+
+    <footer>
+        <p>&copy; Edulopezz</p>
+    </footer>
     <script src="index.js"></script>
 </body>
 </html>
