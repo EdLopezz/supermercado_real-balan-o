@@ -76,20 +76,20 @@ resveneza.innerHTML = venzcalc
 rescodorna.innerHTML =cordcalc
 resbjesus.innerHTML=bjesuscalc
 
+let data = get
 
 }
 
 //Gerador de PDF
 
-function gerarpdf(){
-const dados = document.getElementById("gerarpdf").innerHTML//conteudo do pdf
-const janela = window.open("","","width= 400 height=400")//janela que abre 
-janela.document.write("<html> <head>")
-janela.document.write("<title> PDF COM JAVASCRIPT </title></head>")
-janela.document.write("<body>")
-janela.document.write(dados)
-janela.document.write("</body> </html>")
-janela.document.close
-janela.print()//faz aparecer a janela na tela
-
+function createPDF() {
+    var pdf = document.getElementById("content");
+    var opt = {
+        margin: 1,
+        filename: 'html2pdf-converted.pdf',
+        image: { type: 'jpeg', quality: 1 },
+        html2canvas:  { scale: 2 },
+        jsPDF: { unit: 'in', format: 'a4', orientation: 'portrait' }
+    };
+    html2pdf().set(opt).from(pdf).save();
 }
