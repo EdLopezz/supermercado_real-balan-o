@@ -10,13 +10,11 @@ body{
 header{
     text-align: center;
     background: url(bg-real.webp);
-    padding:20px;
+    padding: 20px;
 }
 
 /*Tabelas */
-.tables table {
-    
-}
+
 #dif{
     background-color ;
 }
@@ -32,20 +30,34 @@ table{
 table input{
     width: 100%;
     text-align: center;
-     height: 100%;
+    height: 100%;
+
 }
 
+/*Foooter*/
+
+
+footer{
+    text-align: center;
+    background: url(bg-real.webp);
+    height: 50px;
+    
+}
+footer p{
+    line-height: 50px;
+}
 /*Botoes*/
 
 .btn{
     border: 2px solid;
     display: block;
-    margin: auto;
+    margin:5px auto;
     width: 150px;
     height: 40px;
     background-color: #F2D42F ;
     font-size: 1.1em;
     border-radius: 10px;
+    
 }
 
 .btn:active{
