@@ -76,8 +76,6 @@ resveneza.innerHTML = venzcalc
 rescodorna.innerHTML =cordcalc
 resbjesus.innerHTML=bjesuscalc
 
-let data = get
-
 }
 
 //Gerador de PDF
