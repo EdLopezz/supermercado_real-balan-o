@@ -1,5 +1,14 @@
 function impressao(){
 
+    //data
+
+    let data = document.getElementById("data")
+    let date = new Date()
+    let dia = date.getDate()
+    let mes = date.getMonth()+1
+    let ano = date.getFullYear()
+    data.innerHTML= `${dia}/${mes}/${ano}`
+
 const bprata = document.getElementById("bprata").value
 const bdagua = document.getElementById("bdagua").value
 const bterra = document.getElementById("bterra").value

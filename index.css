@@ -33,7 +33,9 @@ table input{
     height: 100%;
 
 }
-
+table td{
+    text-align: center;
+}
 /*Foooter*/
 
 
