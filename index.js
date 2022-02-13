@@ -49,7 +49,7 @@ const venzcalc = (cxveneza*venezacxv)+parseInt(uveneza)
 //CODORNA
 const ucodorna = document.getElementById("ucodorna").value
 const cxcodorna = document.getElementById("cxcodorna").value
-const codornacxv = 25
+const codornacxv = 20
 const cordcalc = (cxcodorna*codornacxv)+parseInt(ucodorna)
 
 //B JESUS
